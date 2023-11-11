@@ -1,0 +1,4 @@
+<h1>Tasks#index</h1>
+<% @tasks.each do |task| %>
+  <p><%= task.completed %> <%= link_to "#{task.title}", task_path(task.id) %></p>
+<% end %>
